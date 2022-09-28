@@ -218,6 +218,17 @@ a:active, a:visited {
   background-color: #A6BEFA;
 }
 
+@media (max-width: 767px) {
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .section {
   padding-top: var(--section-padding-top);
   padding-bottom: var(--section-padding-bottom);
