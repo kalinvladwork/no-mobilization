@@ -1,0 +1,51 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: var(--step);
+  height: 100%;
+}
+
+body {
+  font-size: var(--font-size);
+  font-weight: 500;
+  line-height: 150%;
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: var(--second-color);
+  color: var(--base-color);
+}
+
+h1 {
+  margin: var(--h1-margin);
+}
+
+h2 {
+  margin: var(--h2-margin);
+}
+
+h3 {
+  margin: var(--h3-margin);
+}
+
+h4 {
+  margin: var(--h4-margin);
+}
+
+p {
+  margin: var(--p-margin);
+}
+
+a {
+  $color: #EBCF6C;
+  color: $color;
+  text-decoration: underline;
+
+  &:hover {
+    color: lighten($color,20%);
+  }
+
+  &:active, &:visited {
+    color: darken($color,40%);
+  }
+}
